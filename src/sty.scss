@@ -1,0 +1,49 @@
+$myFont: sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+font {
+  family: Helvetica, sans-serif;
+  size: 180px;
+  weight: bold;
+}
+
+text {
+  align: center;
+  transform: lowercase;
+  overflow: hidden;
+}
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  
+}
+
+#container {
+  width: $myWidth;
+}
+
+@mixin important-text {
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.text{
+  
+}
+
+.button-base {
+  radius: 2px;
+  margin: 5px;
+  color: green;
+}
+
+.menu-button {
+  @extend .button-base;
+  background-color: blue;
+  color: white;
+}
